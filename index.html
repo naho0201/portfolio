@@ -7,18 +7,40 @@
     <title>hinaho morishita portfolio </title>
     <!-- <link rel="icon" href="Waffle_favicon_256.ico"> -->
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
     <header id="header">
-        <h1 class="logo">My Portfolio</h1>
+        <h1 class="logo">My Portfolio˚｡⋆୨୧ ׅ ⊹</h1>
         <nav>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#">NEWS</a></li>
-                <li class="nav__item"><a href="#">ABOUT</a></li>
-                <li class="nav__item"><a href="#">BUSINESS</a></li>
-                <li class="nav__item"><a href="#">COMPANY</a></li>
-                <li class="nav__item"><a href="#">CONTACT</a></li>
+                <li class="nav__item"><a href="#ABOUTME">About Me</a></li>
+                <li class="nav__item"><a href="#WORKS">Works</a></li>
+                <li class="nav__item"><a href="#SKILLS">My Skills</a></li>
+                <!-- <li class="nav__item"><a href="#">COMPANY</a></li>
+                <li class="nav__item"><a href="#">CONTACT</a></li> -->
             </ul>
         </nav>
     </header>
@@ -34,6 +56,8 @@
 
         <div class="contens">
 
+            <div class="scrolldown1"><span>Scroll</span></div>
+
 
             <div id="ABOUT">
                 <h1>About This Portfolio</h1>
@@ -48,6 +72,7 @@
                 <div class="aboutme_container">
                     <div>
                         <h1>About Me</h1>
+                        <p class="name">森下 陽菜穂 - Hinaho Morishita</p>
                         <p>静岡県出身。津田塾大学総合政策学部総合政策学科在学中。専攻はソーシャル・アーキテクチャ（社会情報）。好きなものはTWICEと猫とセーラームーン。</p>
                         <div class="link">
                             <p2>- Github：<a href="https://github.com/naho0201"
@@ -70,22 +95,37 @@
 
             <div id="WORKS">
 
-                <h1>WORKS</h1>
+                <h1>Works</h1>
                 <p>過去の成果物を紹介します。</p>
 
                 <div id="cardlayout-wrap"><!-- カードレイアウトをラッピング -->
                     <section class="card-list">
                         <class="card-link">
-                            <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
-                            <p class="card-title">Waffle Zoo</p>
+                            <div class="ribon">
+                            <figure class="card-figure"><img src="KV.JPG"></figure>
+                            <div class="caption"><span>NEW</span></div>
+                            </div>
+                            <p class="card-title">portfolio</p>
 
                             <p class="card-text-tax">
-                                2023/10</p>
+                                2024/04</p>
                             </a>
                     </section>
                     <section class="card-list">
                         <class="card-link">
-                            <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
+                            <div class="ribon">
+                            <figure class="card-figure"><img src="wafflefeslp.png"></figure>
+                            <div class="caption"><span>NEW</span></div>
+                            </div>
+                            <p class="card-title">Waffle Fes LP</p>
+
+                            <p class="card-text-tax">
+                                2024/03</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <figure class="card-figure"><img src="maternityheroes.png"></figure>
                             <p class="card-title">Maternity Heroes</p>
 
                             <p class="card-text-tax">
@@ -94,20 +134,11 @@
                     </section>
                     <section class="card-list">
                         <class="card-link">
-                            <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
-                            <p class="card-title">Waffle Festival</p>
+                            <figure class="card-figure"><img src="wafflezoo.png"></figure>
+                            <p class="card-title">Waffle Zoo</p>
 
                             <p class="card-text-tax">
-                                2024/03</p>
-                            </a>
-                    </section>
-                    <section class="card-list">
-                        <class="card-link">
-                            <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
-                            <p class="card-title">Waffle Festival</p>
-
-                            <p class="card-text-tax">
-                                2024/03</p>
+                                2023/11</p>
                             </a>
                     </section>
                     <section class="card-list">
@@ -130,13 +161,44 @@
                     </section>
 
 
-                    <!-- モーダル -->
-
-                    
-
-
                 </div>
 
+
+
+            </div>
+
+            <div id="SKILLS">
+
+
+
+                <h1>My Skills</h1>
+
+                <div class="skills_containers">
+
+                    <div class="skills_container">
+                        <p class="skills_title">HTML/CSS</p>
+                        <hr>
+                        <p class="skills_text">勉強し始めて一年とまだまだですが、自分の作りたいものを表現できるようにはなりました。</p>
+                    </div>
+
+                    <div class="skills_container">
+                        <p class="skills_title">Javascript</p>
+                        <hr>
+                        <p class="skills_text">基本的な構文理解、活用方法は理解することができます。Webサイト制作やWebアプリ制作の際に必ず使用しました。</p>
+                    </div>
+
+                    <div class="skills_container">
+                        <p class="skills_title">Phyton</p>
+                        <hr>
+                        <p class="skills_text">基本的な構文は書くことができます。機械学習を使った研究にも使用したことがあります。</p>
+                    </div>
+
+                    <div class="skills_container">
+                        <p class="skills_title">R</p>
+                        <hr>
+                        <p class="skills_text">Rを使用してデータ分析をすることができます。機械学習、回帰分析から統計、考察まですることができます。</p>
+                    </div>
+                </div>
 
 
             </div>
@@ -147,5 +209,20 @@
 
     </main>
 
-    
+    <script>
+        // ページ内スクロール
+        $('a[href^="#"]').click(function () {
+            const speed = 600;
+            let href = $(this).attr("href");
+            let target = $(href == "#" || href == "" ? "html" : href);
+            let position = target.offset().top;
+            $("body,html").animate({ scrollTop: position }, speed, "swing");
+            return false;
+        });
+    </script>
+
+
 </body>
+
+
+</html>
