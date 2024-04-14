@@ -6,6 +6,7 @@
     body {
         margin: 0;
         padding: 0;
+        /* background:linear-gradient(90deg, #FCD9DF 30%,#CFE0F8 100%); */
     }
 
     a {
@@ -64,6 +65,7 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        text-decoration: none;
     }
 
     #header .nav__item a:hover {
@@ -72,69 +74,73 @@
 
 
     /* KV */
+    .KV img.pc {
+        margin-top: 7%;
+        max-width: 100%; /* 要素の幅に合わせて画像の最大幅を指定 */
+        height: auto; /* アスペクト比を維持しながら幅に合わせて自動的に高さを調整 */
+    }
+    
 
-    .KV img {
-        height: auto;
-        width: 1450px;
+
+    .keytitle{
+        margin-top: 12%;
+        text-align: center;
+        font-size: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 600;
     }
 
-    /*スクロールダウン全体の場所*/
-    .scrolldown1 {
-        /*描画位置※位置は適宜調整してください*/
-        position: absolute;
-        left: 50%;
-        bottom: 10px;
-        /*全体の高さ*/
-        height: 600px;
+    .scroll {
+        margin-top: 5%;
+        text-align: center;
+        color         : #333;
+        font-size     : 16px;
+        /* writing-mode  : vertical-rl; */
+        position      : relative;
+        left          : 50%;
+        transform     : translateX(-50%) translateY(-50%);
+        font-family: "Montserrat", sans-serif;
+     
     }
 
-    /*Scrollテキストの描写*/
-    .scrolldown1 span {
-        /*描画位置*/
-        position: absolute;
-        left: -15px;
-        top: -15px;
-        /*テキストの形状*/
-        color: black;
-        font-size: 0.7rem;
-        letter-spacing: 0.05em;
+    .scroll::after {
+        text-align: center;
+
+        content         : '';
+        display         : block;
+        position        : absolute;
+        right           : 50%;
+        bottom          : -120px;
+        transform       : translateX(-50%);
+        width           : 1px;
+        height          : 100px;
+        background-color: #333;
+      }
+  .scroll::after {
+    animation: scroll 3s cubic-bezier(1, 0, 0, 1) infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: 0 0;
     }
-
-    /* 線の描写 */
-    .scrolldown1::after {
-        content: "";
-        /*描画位置*/
-        position: absolute;
-        top: 0;
-        /*線の形状*/
-        width: 1px;
-        height: 20px;
-        background: black;
-        /*線の動き1.4秒かけて動く。永遠にループ*/
-        animation: pathmove 1.4s ease-in-out infinite;
-        opacity: 0;
+    50% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
     }
-
-    /*高さ・位置・透過が変化して線が上から下に動く*/
-    @keyframes pathmove {
-        0% {
-            height: 0;
-            top: 0;
-            opacity: 0;
-        }
-
-        30% {
-            height: 30px;
-            opacity: 1;
-        }
-
-        100% {
-            height: 0;
-            top: 50px;
-            opacity: 0;
-        }
+    50.1% {
+      transform: scale(1, 1);
+      transform-origin: 0 100%;
     }
+    100% {
+      transform: scale(1, 0);
+      transform-origin: 0 100%;
+    }
+  }
 
+
+    
 
     /* ABOUT */
 
@@ -147,11 +153,15 @@
 
     }
 
+    #ABOUT h1{
+        margin-top: 30%;
+    }
+
 
     /* About ME */
     #ABOUTME {
         width: 60%;
-        margin-top: 10%;
+        margin-top: 13%;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
@@ -196,7 +206,7 @@
 
 
     .aboutme_img {
-        width: 60%;
+        width: 70%;
         height: auto;
     }
 
@@ -206,7 +216,7 @@
 
     #WORKS {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 13%;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
