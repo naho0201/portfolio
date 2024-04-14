@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hinaho morishita portfolio </title>
+    <title>+*:ꔫ:*hinaho morishita portfolio </title>
     <!-- <link rel="icon" href="Waffle_favicon_256.ico"> -->
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
@@ -28,6 +28,11 @@
     <!--  -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
 
@@ -61,7 +66,7 @@
 
             <div id="ABOUT">
                 <h1>About This Portfolio</h1>
-                <p>こんにちは！Morishita Hinahoです。私のポートフォリオサイトにようこそ！ここでは、私の過去のプロジェクトや成果物、身につけたスキルを紹介しています。</p>
+                <p>こんにちは！私のポートフォリオサイトにようこそ！ここでは、私の過去のプロジェクトや成果物、身につけたスキルを紹介しています。</p>
             </div>
 
 
@@ -101,10 +106,12 @@
                 <div id="cardlayout-wrap"><!-- カードレイアウトをラッピング -->
                     <section class="card-list">
                         <class="card-link">
-                            <div class="ribon">
-                            <figure class="card-figure"><img src="KV.JPG"></figure>
-                            <div class="caption"><span>NEW</span></div>
-                            </div>
+                            <!-- <div class="ribon"> -->
+                            <figure class="card-figure"><img src="KV.JPG" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1"></figure>
+                            <!-- <div class="caption"><span>NEW</span></div> -->
+                            <!-- </div> -->
+
                             <p class="card-title">portfolio</p>
 
                             <p class="card-text-tax">
@@ -113,10 +120,11 @@
                     </section>
                     <section class="card-list">
                         <class="card-link">
-                            <div class="ribon">
-                            <figure class="card-figure"><img src="wafflefeslp.png"></figure>
-                            <div class="caption"><span>NEW</span></div>
-                            </div>
+                            <!-- <div class="ribon"> -->
+                            <figure class="card-figure"><img src="wafflefeslp.png" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"></figure>
+                            <!-- <div class="caption"><span>NEW</span></div> -->
+                            <!-- </div> -->
                             <p class="card-title">Waffle Fes LP</p>
 
                             <p class="card-text-tax">
@@ -143,10 +151,10 @@
                     </section>
                     <section class="card-list">
                         <class="card-link">
-                            <!-- <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
-                          <p class="card-title">Waffle Festival</p>
-                          
-                          <p class="card-text-tax">
+                            <!-- <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure> -->
+                            <!-- <p class="card-title">Coming Soon...</p> -->
+
+                            <!-- <p class="card-text-tax">
                             2024/03</p>
                           </a> -->
                     </section>
@@ -159,6 +167,79 @@
                             2024/03</p> -->
                             </a>
                     </section>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Portfolio</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：２週間</p>
+                                        <p>このポートフォリオです。ページの遷移等をさせずに一つのページ内でなるべく見やすく、軽くを心がけて制作しました。
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                            <p>使用した技術</p>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>jQuery</li>
+                                                <li>Git/Github</li>
+                                            </ul>
+
+                                        </div> -->
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Waffle Fes LP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：４ヶ月</p>
+                                        <p>URL:<a href="https://waffle-festival.com/">https://waffle-festival.com/</a></p>
+                                        <p>WaffleFestival2024のLPページです。初めてたくさんの人の目に触れるようなWebサイト制作に携わらせていただきました。どんなレイアウト、デザインにしたらこのイベントに興味を持ってもらえるか、申し込みたいと思ってもらえるかをたくさん話し合って制作しました。
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                            <p>使用した技術</p>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>jQuery</li>
+                                                <li>Git/Github</li>
+                                                <li><Figma/li>
+                                            </ul>
+
+                                        </div> -->
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -188,7 +269,7 @@
                     </div>
 
                     <div class="skills_container">
-                        <p class="skills_title">Phyton</p>
+                        <p class="skills_title">Pyhton</p>
                         <hr>
                         <p class="skills_text">基本的な構文は書くことができます。機械学習を使った研究にも使用したことがあります。</p>
                     </div>
@@ -209,17 +290,31 @@
 
     </main>
 
+    <footer>
+        <h1>Thank you for watching</h1>
+    </footer>
+
     <script>
         // ページ内スクロール
         $('a[href^="#"]').click(function () {
             const speed = 600;
             let href = $(this).attr("href");
             let target = $(href == "#" || href == "" ? "html" : href);
-            let position = target.offset().top;
+            // ヘッダーの高さを取得
+            var headerHeight = $('header').height();
+            // ヘッダーの高さを引く
+            let position = target.offset().top - headerHeight;
             $("body,html").animate({ scrollTop: position }, speed, "swing");
             return false;
         });
     </script>
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
 
 </body>
