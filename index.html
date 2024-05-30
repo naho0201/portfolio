@@ -1,15 +1,521 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hinaho morishita portfolio </title>
+    <title>+*:ꔫ:*hinaho morishita portfolio </title>
     <!-- <link rel="icon" href="Waffle_favicon_256.ico"> -->
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-    <header>
-        
+    <header id="header">
+        <h1 class="logo">MyPortfolio ⋆୨୧ ׅ ⊹</h1>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#ABOUTME">About Me</a></li>
+                <li class="nav__item"><a href="#WORKS">Works</a></li>
+                <li class="nav__item"><a href="#SKILLS">My Skills</a></li>
+                <!-- <li class="nav__item"><a href="#">COMPANY</a></li>
+                <li class="nav__item"><a href="#">CONTACT</a></li> -->
+            </ul>
+        </nav>
     </header>
+
+    <main>
+
+        <!-- KV -->
+        <div class="KV">
+            <!-- <img class="pc" src="Welcome (2).png"> -->
+            <h1>Welcome<br>To<br>My Portfolio</h1>
+        </div>
+
+        <!-- <h1 class="keytitle">Welcome<br>To<br>My Portfolio</h1> -->
+
+
+        <!-- コンテンツ -->
+        <div class="scroll">
+            <p>scroll</p>
+        </div>
+
+        <div class="contens">
+
+
+
+            <div id="ABOUT">
+                <h1>About This Portfolio</h1>
+                <p>こんにちは！私のポートフォリオサイトにようこそ！ここでは、私の過去のプロジェクトや成果物、身につけたスキルを紹介しています。</p>
+            </div>
+
+
+
+
+
+            <div id="ABOUTME">
+                <div class="aboutme_container">
+                    <div>
+                        <h1>About Me</h1>
+                        <p class="name">森下 陽菜穂 - Hinaho Morishita</p>
+                        <p>津田塾大学総合政策学部総合政策学科在学中。専攻はソーシャル・アーキテクチャ（社会情報）。好きなものはTWICEと猫とセーラームーン。</p>
+                        <div class="link">
+                            <p2>- Github：<a href="https://github.com/naho0201"
+                                    target="_blank">https://github.com/naho0201</a></p2><br>
+                            <p3>- LinkedIn：<a href="https://www.linkedin.com/in/hinaho-morishita-4b75772ba/"
+                                    target="_blank">https://www.linkedin.com/</a></p3>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="about.JPEG" class="aboutme_img">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div id="TimeLine">
+
+            <ul class="timeline">
+                <li>
+                  <p class="timeline-date">2022年4月</p>
+                  <div class="timeline-content">
+                    <h3>大学入学</h3>
+                    <p>津田塾大学総合政策学部総合製作学科に入学。必修で国際、社会、政治、経済、法学、データサイエンスを学び、IT系に興味を持つ。</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="timeline-date">2023年4月</p>
+                  <div class="timeline-content">
+                    <h3>社会情報系のゼミに入る</h3>
+                    <p>好きなデータ使って好きなように分析をして良いと言ってもらえるような<br>自由なゼミに入る。</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="timeline-date">2023年6月</p>
+                  <div class="timeline-content">
+                    <h3>NPO法人waffleのwaffle collegeで2週間のエントリーコースを終了する。</h3>
+                    <p>初めてプログラミングを体験する。Thunkableでスマホアプリを作成したり、html/cssでWebサイトを作成したりする。</p>
+                  </div>
+                </li>
+                <li>
+                    <p class="timeline-date">2024年3月</p>
+                    <div class="timeline-content">
+                      <h3>NPO法人waffleのwaffle collegeで８カ月間のエントリーコースを終了する。</h3>
+                      <p>JavaScriptを中心に勉強をする。複雑なwebサイトやWebアプリを作ることができるようになる。</p>
+                    </div>
+                  </li>
+              </ul>
+              </div>
+
+
+
+
+            <div id="WORKS">
+
+
+
+
+                <h1>Works</h1>
+                <p>過去の成果物を紹介します。</p>
+
+                <div id="cardlayout-wrap"><!-- カードレイアウトをラッピング -->
+                    <section class="card-list">
+                        <class="card-link">
+                            <!-- <div class="ribon"> -->
+                            <figure class="card-figure"><img src="okusuri.png" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal5"></figure>
+                            <!-- <div class="caption"><span>NEW</span></div> -->
+                            <!-- </div> -->
+
+                            <p class="card-title">ヘルスめも</p>
+
+                            <p class="card-text-tax">
+                                2024/04</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <!-- <div class="ribon"> -->
+                            <figure class="card-figure"><img src="portfolio.png" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1"></figure>
+                            <!-- <div class="caption"><span>NEW</span></div> -->
+                            <!-- </div> -->
+
+                            <p class="card-title">portfolio</p>
+
+                            <p class="card-text-tax">
+                                2024/04</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <!-- <div class="ribon"> -->
+                            <figure class="card-figure"><img src="wafflefeslp.png" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2"></figure>
+                            <!-- <div class="caption"><span>NEW</span></div> -->
+                            <!-- </div> -->
+                            <p class="card-title">Waffle Fes LP</p>
+
+                            <p class="card-text-tax">
+                                2024/03</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <figure class="card-figure"><img src="maternityheroes.jpg" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3"></figure>
+                            <p class="card-title">Maternity Heroes</p>
+
+                            <p class="card-text-tax">
+                                2024/03</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <figure class="card-figure"><img src="wafflezoo.png" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal4"></figure>
+                            <p class="card-title">Waffle Zoo</p>
+
+                            <p class="card-text-tax">
+                                2023/11</p>
+                            </a>
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <!-- <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure> -->
+                            <!-- <p class="card-title">Coming Soon...</p> -->
+
+                            <!-- <p class="card-text-tax">
+                            2024/03</p>
+                          </a> -->
+                    </section>
+                    <section class="card-list">
+                        <class="card-link">
+                            <!-- <figure class="card-figure"><img src="スクリーンショット 2024-04-09 1.10.49.png"></figure>
+                          <p class="card-title">Waffle Festival</p>
+                          
+                          <p class="card-text-tax">
+                            2024/03</p> -->
+                            </a>
+                    </section>
+
+
+                    <!-- ヘルスめもModal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Portfolio</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：1週間 / チーム開発（３人）</p>
+                                        <p>作品紹介URL : <a
+                                                href="https://www.canva.com/design/DAGDD-8FXow/NonNbHR5sY0wPzF7U_upYw/view?utm_content=DAGDD-8FXow&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                                                target="_blank">別タブで開きます</a>
+                                        </p>
+                                        <p>
+                                            2024/4/13-2024/4/28に開催されたTrackjobのハッカソンに参加した際に開発し、優秀賞をいただいた作品です。
+
+                                            今回作ったアプリはメモということで持ち運びができる・モバイル特化型にしたいという思いがありました。
+                                            またチームメンバーみんなiPhoneユーザーで、せっかくならこの機会に新しいものを勉強しようということもあり、swiftに挑戦させていただきました。
+
+
+                                        </p>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- portfolioModal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Portfolio</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：
+                                            ２週間 / 個人制作</p>
+                                        <p>
+                                            このポートフォリオです。なるべく見やすく、わかりやすくを心がけて制作しました。
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                            <p>使用した技術</p>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>jQuery</li>
+                                                <li>Git/Github</li>
+                                            </ul>
+
+                                        </div> -->
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LPModal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Waffle Fes LP</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：４ヶ月 / チーム制作（３人）</p>
+                                        <p>URL : <a href="https://waffle-festival.com/"
+                                                target="_blank">https://waffle-festival.com/</a>
+                                        </p>
+                                        <p>WaffleFestival2024のLPページです。初めてたくさんの人の目に触れるようなWebサイト制作に携わらせていただきました。『敷居を低くして全ての人をウェルカムする』というコンセプトに沿ってどんなレイアウト、デザインにしたらこのイベントに興味を持ってもらえるか、申し込みたいと思ってもらえるかを何度も話し合って制作しました。
+                                            <br>さまざまな方に助けてもらいながら進めたLP制作期間は楽しみつつ多くのことを学ぶことができた充実した時間でした。
+
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                            <p>使用した技術</p>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>jQuery</li>
+                                                <li>Git/Github</li>
+                                                <li><Figma/li>
+                                            </ul>
+
+                                        </div> -->
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- wafflezooModal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">MaternityHeroes</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：２ヶ月 / チーム開発</p>
+                                        <p>発表資料URL/デモ動画 : <a
+                                                href="https://www.canva.com/design/DAF8AtmwBS8/oWAPsPZLtI2ZbYYuQIUStQ/view?utm_content=DAF8AtmwBS8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                                                target="_blank">別タブで開きます</a>
+                                        </p>
+                                        <p>Wafflecollageテックキャリアコースの最終プロジェクトとして制作した『スマートな妊婦さん向けの情報サイト』webアプリです。なぜ妊婦さんのイメージは黄色やピンクで統一されてしまっているのだろう。もっとスタイリッシュな妊婦さん向けの何かがあっても良いのではないか。という
+                                            理由からこのwebアプリ製作がスタートしました。<br>製作期間中はメンバーの半分が留学のため、時差でミーティングの時間を合わせることが難しい、初めて触れたデータベースやPHP、SQLがうまく動かない、時間もあまりない、等課題はたくさんありましたが
+                                            全員が良いものを作りたいという思いで全力で取り組んだ結果、工夫したチームワークを認めていただき”コラボレーション賞”をいただくことができました。
+
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                         <p>使用した技術</p>
+                                         <ul>
+                                             <li>HTML/CSS</li>
+                                             <li>JavaScript</li>
+                                             <li>Bootstrap</li>
+                                             <li>jQuery</li>
+                                             <li>Git/Github</li>
+                                             <li><Figma/li>
+                                         </ul>
+
+                                     </div> -->
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- wafflezooModal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Waffle Zoo</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal_container">
+                                        <p>制作期間：２週間 / チーム開発</p>
+
+                                        <p>URL : <a href="https://waffle-zoo.glitch.me/index.html"
+                                                target="_blank">https://waffle-zoo.glitch.me/index.html</a>
+                                        </p>
+                                        <p>Wafflecollageテックキャリアコースのプロジェクトとして制作したwebサイトです。架空の動物紹介サイトというコンセプトでライブラリとDOMを初めて使用し、動きのあるWebサイトを製作しました。
+                                        </p>
+                                        <!-- <div class="modal_text">
+                                            <p>使用した技術</p>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Bootstrap</li>
+                                                <li>jQuery</li>
+                                                <li>Git/Github</li>
+                                                <li><Figma/li>
+                                            </ul>
+
+                                        </div> -->
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div id="SKILLS">
+                <h1>My Skills</h1>
+
+                <div class="skill_boxes">
+
+                    <div class="textBox1">Git / HTML / CSS / JavaScript <br>Swift / SwiftUI / R / Python</div>
+                    <div class="textBox2">PHP / SQL </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h1>Thank you for watching</h1>
+    </footer>
+
+    <script>
+        // ページ内スクロール
+        $('a[href^="#"]').click(function () {
+            const speed = 600;
+            let href = $(this).attr("href");
+            let target = $(href == "#" || href == "" ? "html" : href);
+            // ヘッダーの高さを取得
+            var headerHeight = $('header').height();
+            // ヘッダーの高さを引く
+            let position = target.offset().top - headerHeight;
+            $("body,html").animate({ scrollTop: position }, speed, "swing");
+            return false;
+        });
+    </script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // 星を表示するための親要素を取得
+            const stars = document.querySelector(".stars");
+
+            // 星を生成する関数
+            const createStar = () => {
+                const starEl = document.createElement("span");
+                starEl.className = "star";
+                const minSize = 1; // 星の最小サイズを指定
+                const maxSize = 2; // 星の最大サイズを指定
+                const size = Math.random() * (maxSize - minSize) + minSize;
+                starEl.style.width = `${size}px`;
+                starEl.style.height = `${size}px`;
+                starEl.style.left = `${Math.random() * 100}%`;
+                starEl.style.top = `${Math.random() * 100}%`;
+                starEl.style.animationDelay = `${Math.random() * 10}s`;
+                stars.appendChild(starEl);
+            };
+
+            // for文で星を生成する関数を指定した回数呼び出す
+            for (let i = 0; i <= 500; i++) {
+                createStar();
+            }
+        });
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
+
+</html>
