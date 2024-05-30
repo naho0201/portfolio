@@ -6,12 +6,16 @@
     body {
         margin: 0;
         padding: 0;
-        /* background:linear-gradient(90deg, #FCD9DF 30%,#CFE0F8 100%); */
     }
 
     a {
         text-decoration: none;
     }
+
+    main {
+        /* background-color: #ede4dd; */
+    }
+
 
     main h1 {
         font-size: 78px;
@@ -25,6 +29,7 @@
 
     main p {
         line-height: 35px;
+
     }
 
     /* header */
@@ -43,8 +48,9 @@
         z-index: 5;
     }
 
+
     #header h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Noto Serif Display", serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -76,13 +82,22 @@
     /* KV */
     .KV img.pc {
         margin-top: 7%;
-        max-width: 100%; /* 要素の幅に合わせて画像の最大幅を指定 */
-        height: auto; /* アスペクト比を維持しながら幅に合わせて自動的に高さを調整 */
+        max-width: 100%;
+        /* 要素の幅に合わせて画像の最大幅を指定 */
+        height: auto;
+        /* アスペクト比を維持しながら幅に合わせて自動的に高さを調整 */
     }
-    
+
+    .KV h1 {
+        margin-top: 10%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 110px;
+    }
 
 
-    .keytitle{
+
+    .keytitle {
         margin-top: 12%;
         text-align: center;
         font-size: 120px;
@@ -93,54 +108,58 @@
     .scroll {
         margin-top: 5%;
         text-align: center;
-        color         : #333;
-        font-size     : 16px;
+        color: #333;
+        font-size: 16px;
         /* writing-mode  : vertical-rl; */
-        position      : relative;
-        left          : 50%;
-        transform     : translateX(-50%) translateY(-50%);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         font-family: "Montserrat", sans-serif;
-     
+
     }
 
     .scroll::after {
         text-align: center;
 
-        content         : '';
-        display         : block;
-        position        : absolute;
-        right           : 50%;
-        bottom          : -120px;
-        transform       : translateX(-50%);
-        width           : 1px;
-        height          : 100px;
+        content: '';
+        display: block;
+        position: absolute;
+        right: 50%;
+        bottom: -120px;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100px;
         background-color: #333;
-      }
-  .scroll::after {
-    animation: scroll 3s cubic-bezier(1, 0, 0, 1) infinite;
-  }
+    }
 
-  @keyframes scroll {
-    0% {
-      transform: scale(1, 0);
-      transform-origin: 0 0;
+    .scroll::after {
+        animation: scroll 3s cubic-bezier(1, 0, 0, 1) infinite;
     }
-    50% {
-      transform: scale(1, 1);
-      transform-origin: 0 0;
+
+    @keyframes scroll {
+        0% {
+            transform: scale(1, 0);
+            transform-origin: 0 0;
+        }
+
+        50% {
+            transform: scale(1, 1);
+            transform-origin: 0 0;
+        }
+
+        50.1% {
+            transform: scale(1, 1);
+            transform-origin: 0 100%;
+        }
+
+        100% {
+            transform: scale(1, 0);
+            transform-origin: 0 100%;
+        }
     }
-    50.1% {
-      transform: scale(1, 1);
-      transform-origin: 0 100%;
-    }
-    100% {
-      transform: scale(1, 0);
-      transform-origin: 0 100%;
-    }
-  }
 
 
-    
+
 
     /* ABOUT */
 
@@ -153,18 +172,21 @@
 
     }
 
-    #ABOUT h1{
+    #ABOUT h1 {
         margin-top: 30%;
     }
 
 
     /* About ME */
+
+
     #ABOUTME {
         width: 60%;
         margin-top: 13%;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+
 
     }
 
@@ -197,6 +219,7 @@
 
     .aboutme_container img {
         max-width: 100%;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.28);
         /* 画像が親要素内で最大幅を超えないように */
     }
 
@@ -210,6 +233,62 @@
         height: auto;
     }
 
+    /* Timeline */
+    #TimeLine{
+        margin-top: 7%;
+       margin-left: auto;
+       margin-right: auto;
+        width: 70%;
+    }
+
+    .timeline {
+        list-style: none;
+      }
+      .timeline > li {
+        margin-bottom: 60px;
+      }
+      
+      /* for Desktop */
+      @media ( min-width : 640px ){
+        .timeline > li {
+          overflow: hidden;
+          margin: 0%;
+          position: relative;
+        }
+        .timeline-date {
+          width: 110px;
+          float: left;
+          margin-top: 20px;
+        }
+        .timeline-content {
+          width: 75%;
+          float: left;
+         
+          border-left: 1.5px #000000 solid;
+          padding-left: 30px;
+        }
+
+        .timeline h3{
+            font-size: 16px;
+        }
+
+        .timeline p{
+            font-size: 14px;
+            margin-bottom: 5%;
+        }
+
+        .timeline-content:before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          background: #000000;
+          position: absolute;
+          left: 107px;
+          top: 24px;
+          border-radius: 100%;
+        }
+      }
+
 
 
     /* works */
@@ -219,7 +298,12 @@
         margin-top: 13%;
         margin-right: auto;
         margin-left: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
         text-align: center;
+
+        background-color: #F4F1F0;
+
     }
 
     #cardlayout-wrap {
@@ -344,7 +428,9 @@
         line-height: 25px;
     }
 
-    
+
+
+
 
 
 
@@ -369,16 +455,6 @@
         display: flex;
     }
 
-    .skills_containers {
-        margin-top: 3%;
-        margin-left: 5%;
-
-    }
-
-    .skills_container {
-        margin-top: 5%;
-        width: 80%;
-    }
 
     .skills_title {
         font-size: 30px;
@@ -390,8 +466,50 @@
             "wdth" 100;
     }
 
-    .skills_container p {
-        text-align: left;
+    .skill_boxes {
+
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    .textBox1 {
+        border: 0.8px solid #333;
+        padding: 50px;
+        position: relative;
+        font-size: 17px;
+    }
+
+    .textBox1::before {
+        background-color: #fff;
+        color: #333;
+        content: "開発、研究に使用したことがあるもの";
+        left: 30px;
+        padding: 3px 10px;
+        position: absolute;
+        top: -15px;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .textBox2 {
+        border: 0.8px solid #333;
+        padding: 50px;
+        position: relative;
+        font-size: 17px;
+        margin-top: 7%;
+    }
+
+    .textBox2::before {
+        background-color: #fff;
+        color: #333;
+        content: "触れたことがあるもの";
+        left: 30px;
+        padding: 3px 10px;
+        position: absolute;
+        top: -15px;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
     }
 
 
@@ -406,7 +524,7 @@
     footer h1 {
 
         text-align: center;
-        font-size: 70px;
+        font-size: 50px;
         font-family: "Noto Serif Display", serif;
         font-optical-sizing: auto;
         font-weight: 400;
